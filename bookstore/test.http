@@ -1,0 +1,23 @@
+
+### Request PING
+GET http://localhost:8080/ping HTTP/1.1
+###
+
+### Create Book
+POST http://localhost:8080/books HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Harry Potter",
+    "author": "J. K. Rowling"
+}
+###
+
+### Get Books
+GET http://localhost:8080/books HTTP/1.1
+###
+
+
+### Get Book by ID
+GET http://localhost:8080/books/1 HTTP/1.1
+###
